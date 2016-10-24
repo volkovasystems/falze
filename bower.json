@@ -1,0 +1,30 @@
+{
+  "name": "falze",
+  "description": "Check if entity is falsy or empty.",
+  "main": "falze.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "entity",
+    "falsy",
+    "empty",
+    "falze"
+  ],
+  "homepage": "https://github.com/volkovasystems/falze",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falzy": "^0.0.0",
+    "arid": "^0.0.2",
+    "doubt": "^0.0.6",
+    "empt": "^0.0.2"
+  }
+}

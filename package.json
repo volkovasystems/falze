@@ -1,0 +1,32 @@
+{
+  "name": "falze",
+  "version": "0.0.0",
+  "description": "Check if entity is falsy or empty.",
+  "main": "falze.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/falze.git"
+  },
+  "keywords": [
+    "check",
+    "entity",
+    "falsy",
+    "empty",
+    "falze"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/falze/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/falze#readme",
+  "dependencies": {
+    "arid": "0.0.2",
+    "doubt": "0.0.6",
+    "empt": "0.0.2",
+    "falzy": "0.0.0"
+  }
+}
