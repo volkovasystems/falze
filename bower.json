@@ -1,5 +1,6 @@
 {
   "name": "falze",
+  "version": "0.0.1",
   "description": "Check if entity is falsy or empty.",
   "main": "falze.js",
   "authors": [
@@ -25,6 +26,6 @@
     "falzy": "^0.0.0",
     "arid": "^0.0.2",
     "doubt": "^0.0.6",
-    "empt": "^0.0.2"
+    "empt": "^0.0.3"
   }
 }
