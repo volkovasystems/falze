@@ -87,15 +87,23 @@ if( typeof window != "undefined" &&
 }
 
 var falze = function falze( entity ){
+	/*;
+		@meta-configuration:
+			{
+				"entity:required": "*"
+			}
+		@end-meta-configuration
+	*/
+
 	if( doubt( entity ).AS_ARRAY ){
 		return arid( entity );
-
-	}else if( typeof entity == "object" ){
-		return empt( entity );
-
-	}else{
-		return falzy( entity );
 	}
+
+	if( typeof entity == "object" ){
+		return empt( entity );
+	}
+
+	return falzy( entity );
 };
 
 if( typeof module != "undefined" ){

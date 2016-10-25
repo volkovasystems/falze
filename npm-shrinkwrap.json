@@ -1,24 +1,17 @@
 {
   "name": "falze",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "arid": {
-      "version": "0.0.2",
+      "version": "0.0.3",
       "from": "arid@latest",
-      "resolved": "https://registry.npmjs.org/arid/-/arid-0.0.2.tgz",
+      "resolved": "https://registry.npmjs.org/arid/-/arid-0.0.3.tgz",
       "dependencies": {
-        "truly": {
-          "version": "0.0.0",
-          "from": "truly@0.0.0",
-          "resolved": "https://registry.npmjs.org/truly/-/truly-0.0.0.tgz"
-        }
-      }
-    },
-    "doubt": {
-      "version": "0.0.6",
-      "from": "doubt@latest",
-      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.0.6.tgz",
-      "dependencies": {
+        "doubt": {
+          "version": "0.0.6",
+          "from": "doubt@latest",
+          "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.0.6.tgz"
+        },
         "harden": {
           "version": "0.3.5",
           "from": "harden@>=0.3.5 <0.4.0",
@@ -28,8 +21,18 @@
           "version": "0.0.8",
           "from": "raze@0.0.8",
           "resolved": "https://registry.npmjs.org/raze/-/raze-0.0.8.tgz"
+        },
+        "truly": {
+          "version": "0.0.1",
+          "from": "truly@latest",
+          "resolved": "https://registry.npmjs.org/truly/-/truly-0.0.1.tgz"
         }
       }
+    },
+    "doubt": {
+      "version": "0.0.6",
+      "from": "doubt@latest",
+      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.0.6.tgz"
     },
     "empt": {
       "version": "0.0.3",
@@ -54,8 +57,19 @@
       }
     },
     "falzy": {
-      "version": "0.0.0",
-      "from": "falzy@latest"
+      "version": "0.0.1",
+      "from": "falzy@latest",
+      "resolved": "https://registry.npmjs.org/falzy/-/falzy-0.0.1.tgz"
+    },
+    "harden": {
+      "version": "0.3.5",
+      "from": "harden@>=0.3.5 <0.4.0",
+      "resolved": "https://registry.npmjs.org/harden/-/harden-0.3.5.tgz"
+    },
+    "raze": {
+      "version": "0.0.8",
+      "from": "raze@0.0.8",
+      "resolved": "https://registry.npmjs.org/raze/-/raze-0.0.8.tgz"
     }
   }
 }
