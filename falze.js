@@ -50,43 +50,19 @@
 			"arid": "arid",
 			"doubt": "doubt",
 			"empt": "empt",
-			"falzy": "falzy"
+			"falzy": "falzy",
+			"protype": "protype"
 		}
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var arid = require( "arid" );
-	var doubt = require( "doubt" );
-	var empt = require( "empt" );
-	var falzy = require( "falzy" );
-}
+const arid = require( "arid" );
+const doubt = require( "doubt" );
+const empt = require( "empt" );
+const falzy = require( "falzy" );
+const protype = require( "protype" );
 
-if( typeof window != "undefined" &&
-	!( "arid" in window ) )
-{
-	throw new Error( "arid is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "doubt" in window ) )
-{
-	throw new Error( "doubt is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "empt" in window ) )
-{
-	throw new Error( "empt is not defined" );
-}
-
-if( typeof window != "undefined" &&
-	!( "falzy" in window ) )
-{
-	throw new Error( "falzy is not defined" );
-}
-
-var falze = function falze( entity ){
+const falze = function falze( entity ){
 	/*;
 		@meta-configuration:
 			{
@@ -99,13 +75,11 @@ var falze = function falze( entity ){
 		return arid( entity );
 	}
 
-	if( typeof entity == "object" ){
+	if( protype( entity, OBJECT ) ){
 		return empt( entity );
 	}
 
 	return falzy( entity );
 };
 
-if( typeof module != "undefined" ){
-	module.exports = falze;
-}
+module.exports = falze;
