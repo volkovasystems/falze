@@ -18,16 +18,19 @@
     "falze"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+      "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/falze/issues"
   },
   "homepage": "https://github.com/volkovasystems/falze#readme",
   "dependencies": {
-    "arid": "^0.2.0",
-    "doubt": "^0.2.0",
-    "empt": "^0.1.0",
-    "falzy": "^0.3.0",
-    "protype": "^0.2.0"
+    "arid": "^0.3.0",
+    "doubt": "^0.4.0",
+    "empt": "^0.2.0",
+    "falzy": "^0.5.0",
+    "protype": "^0.4.0"
   }
 }
