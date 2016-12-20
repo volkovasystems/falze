@@ -1,8 +1,10 @@
 {
   "name": "falze",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Check if entity is falsy or empty.",
   "main": "falze.js",
+  "support": "falze.support.js",
+  "deploy": "falze.deploy.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"

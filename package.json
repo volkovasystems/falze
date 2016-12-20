@@ -1,10 +1,13 @@
 {
   "name": "falze",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Check if entity is falsy or empty.",
   "main": "falze.js",
+  "support": "falze.support.js",
+  "deploy": "falze.deploy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel falze.js -o falze.support.js && webpack",
+    "test": "mocha falze-test.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,7 @@
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
   "contributors": [
-      "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
