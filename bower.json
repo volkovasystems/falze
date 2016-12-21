@@ -1,8 +1,10 @@
 {
   "name": "falze",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Check if entity is falsy or empty.",
   "main": "falze.js",
+  "support": "falze.support.js",
+  "deploy": "falze.deploy.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
@@ -24,10 +26,10 @@
     "tests"
   ],
   "dependencies": {
-    "arid": "^0.3.0",
-    "doubt": "^0.4.0",
-    "empt": "^0.2.0",
-    "falzy": "^0.5.0",
-    "protype": "^0.4.0"
+    "arid": "^0.4.0",
+    "doubt": "^0.6.0",
+    "empt": "^0.3.0",
+    "falzy": "^0.7.0",
+    "protype": "^0.7.0"
   }
 }
