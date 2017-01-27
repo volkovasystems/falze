@@ -74,7 +74,7 @@ const falze = function falze( entity ){
 		@end-meta-configuration
 	*/
 
-	if( doubt( entity ).AS_ARRAY ){
+	if( doubt( entity, AS_ARRAY ) ){
 		return arid( entity );
 	}
 
