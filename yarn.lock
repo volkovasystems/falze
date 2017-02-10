@@ -65,12 +65,12 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.0 || ^1.1.13"
 
-arid@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/arid/-/arid-0.11.0.tgz#76d425ee8cff4ae1628301e152ec80b2b5f6226f"
+arid@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/arid/-/arid-0.12.0.tgz#9ab788ad7669bd3997de3319c230144101d07faa"
   dependencies:
     babel-runtime "^6.22.0"
-    doubt "^0.13.0"
+    doubt "^0.14.0"
     truly "^0.11.0"
 
 arr-diff@^2.0.0:
@@ -1020,15 +1020,16 @@ domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
 
-doubt@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.13.0.tgz#c55344ebc081005c10308a214b3d60d53e9484f6"
+doubt@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.14.0.tgz#0196e55ab36ebd6c855812551b9188a5debeaecc"
   dependencies:
     babel-runtime "^6.22.0"
     cemento "^0.8.0"
     circular-json "^0.3.1"
     falzy "^0.11.0"
     harden "^0.14.0"
+    kount "^0.7.0"
     protype "^0.15.0"
 
 ecc-jsbn@~0.1.1:
@@ -1050,12 +1051,12 @@ emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
 
-empt@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/empt/-/empt-0.9.0.tgz#531955f9b16f40b9ab58303d6a6f667ddd539ed3"
+empt@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/empt/-/empt-0.10.0.tgz#00e128ad45cfdb0217e074c91ad43c0f04f3b6b8"
   dependencies:
     babel-runtime "^6.22.0"
-    doubt "^0.13.0"
+    doubt "^0.14.0"
     kount "^0.7.0"
     protype "^0.15.0"
 
