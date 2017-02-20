@@ -20,4 +20,5 @@ doubt \
 empt \
 falzy \
 protype \
---save
+--save \
+--force-latest
