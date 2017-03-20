@@ -65,13 +65,13 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.0 || ^1.1.13"
 
-arid@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/arid/-/arid-0.20.0.tgz#66db0ecc4371f7a750e7c2b969ad08b24e14fb2a"
+arid@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/arid/-/arid-0.21.0.tgz#0baf97686d513edfe57aa8245a9307d94245dfb0"
   dependencies:
     arkount "^0.3.0"
     babel-runtime "^6.23.0"
-    doubt "^0.22.0"
+    doubt "^0.23.0"
 
 arkount@^0.3.0:
   version "0.3.0"
@@ -813,6 +813,14 @@ cemento@^0.14.0:
     harden "^0.19.0"
     kount "^0.10.0"
 
+cemento@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/cemento/-/cemento-0.15.0.tgz#77fe5818c3c67975d47f974df052bea9739ff5a5"
+  dependencies:
+    babel-runtime "^6.23.0"
+    harden "^0.21.0"
+    kount "^0.10.0"
+
 center-align@^0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
@@ -1041,6 +1049,19 @@ doubt@^0.22.0:
     protype "^0.20.0"
     stringe "^0.1.0"
 
+doubt@^0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.23.0.tgz#76fd9397a0b91225e570f9a585875f73e4c56227"
+  dependencies:
+    babel-runtime "^6.23.0"
+    cemento "^0.15.0"
+    circular-json "^0.3.1"
+    falzy "^0.17.0"
+    harden "^0.21.0"
+    khount "^0.0.0"
+    protype "^0.21.0"
+    stringe "^0.1.0"
+
 ecc-jsbn@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
@@ -1063,14 +1084,14 @@ emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
 
-empt@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/empt/-/empt-0.18.0.tgz#7e52cd664911a678b2fd9eff5c64d7cb9ec14ece"
+empt@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/empt/-/empt-0.19.0.tgz#938d1e7a5b178c3e21e5aa5cef9d14f3d463b015"
   dependencies:
     babel-runtime "^6.23.0"
-    doubt "^0.22.0"
+    doubt "^0.23.0"
     kount "^0.10.0"
-    protype "^0.20.0"
+    protype "^0.21.0"
 
 enhanced-resolve@^3.0.0:
   version "3.1.0"
@@ -1143,6 +1164,13 @@ falzy@^0.16.0:
   dependencies:
     babel-runtime "^6.23.0"
     protype "^0.20.0"
+
+falzy@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/falzy/-/falzy-0.17.0.tgz#228535d605ae8d1a0ccd44f185d7534636a166fe"
+  dependencies:
+    babel-runtime "^6.23.0"
+    protype "^0.21.0"
 
 filename-regex@^2.0.0:
   version "2.0.0"
@@ -1295,6 +1323,12 @@ harden@^0.19.0:
   dependencies:
     babel-runtime "^6.23.0"
 
+harden@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/harden/-/harden-0.21.0.tgz#c3ca5e255e440fc5e6e996acb21515bb892bff49"
+  dependencies:
+    babel-runtime "^6.23.0"
+
 has-ansi@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/has-ansi/-/has-ansi-2.0.0.tgz#34f5049ce1ecdf2b0649af3ef24e45ed35416d91"
@@ -1344,8 +1378,8 @@ home-or-tmp@^2.0.0:
     os-tmpdir "^1.0.1"
 
 hosted-git-info@^2.1.4:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.2.0.tgz#7a0d097863d886c0fabbdcd37bf1758d8becf8a5"
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.3.1.tgz#ac439421605f0beb0ea1349de7d8bb28e50be1dd"
 
 http-signature@~1.1.0:
   version "1.1.1"
@@ -1922,6 +1956,14 @@ protype@^0.20.0:
     cemento "^0.14.0"
     harden "^0.19.0"
 
+protype@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/protype/-/protype-0.21.0.tgz#958452abbaa6daaa8e79386179b220477e2dca7c"
+  dependencies:
+    babel-runtime "^6.23.0"
+    cemento "^0.15.0"
+    harden "^0.21.0"
+
 prr@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/prr/-/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
@@ -2000,8 +2042,8 @@ read-pkg@^1.0.0:
     path-type "^1.0.0"
 
 "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.5, readable-stream@^2.1.0:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.5.tgz#a0b187304e05bab01a4ce2b4cc9c607d5aa1d606"
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.6.tgz#8b43aed76e71483938d12a8d46c6cf1a00b1f816"
   dependencies:
     buffer-shims "^1.0.0"
     core-util-is "~1.0.0"
@@ -2191,8 +2233,8 @@ source-map-loader@^0.2.0:
     source-map "~0.1.33"
 
 source-map-support@^0.4.2:
-  version "0.4.12"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.12.tgz#f47d02bf01efaf0c160d3a37d038401b92b1867e"
+  version "0.4.14"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.14.tgz#9d4463772598b86271b4f523f6c1f4e02a7d6aef"
   dependencies:
     source-map "^0.5.6"
 
@@ -2371,8 +2413,8 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
 
 uglify-js@^2.7.5:
-  version "2.8.12"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.12.tgz#8a50f5d482243650b7108f6080aa3a6afe2a6c55"
+  version "2.8.14"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.14.tgz#25b15d1af39b21752ee33703adbf432e8bc8f77d"
   dependencies:
     source-map "~0.5.1"
     uglify-to-browserify "~1.0.0"
