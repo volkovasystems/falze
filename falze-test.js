@@ -1,8 +1,11 @@
 "use strict";
 
+const assert = require( "assert" );
 const falze = require( "./falze.js" );
 
-console.log( falze( { } ) );
-console.log( falze( [ ] ) );
-console.log( falze( { "name": "simple" } ) );
-console.log( falze( [ 1, 2, 3 ] ) );
+assert.equal( falze( { } ), true, "should be true" );
+assert.equal( falze( [ ] ), true, "should be true" );
+assert.equal( falze( { "name": "simple" } ), false, "should be false" );
+assert.equal( falze( [ 1, 2, 3 ] ), false, "should be false" );
+
+console.log( "ok" );
