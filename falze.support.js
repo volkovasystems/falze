@@ -34,10 +34,11 @@
               			"file": "falze.js",
               			"module": "falze",
               			"author": "Richeve S. Bebedor",
-              			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-              			],
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
+              			],
               			"repository": "https://github.com/volkovasystems/falze.git",
               			"test": "falze-test.js",
               			"global": true
@@ -53,17 +54,15 @@
               			"arid": "arid",
               			"doubt": "doubt",
               			"empt": "empt",
-              			"falzy": "falzy",
-              			"protype": "protype"
+              			"falzy": "falzy"
               		}
               	@end-include
-              */
+              */var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var arid = require("arid");
 var doubt = require("doubt");
 var empt = require("empt");
 var falzy = require("falzy");
-var protype = require("protype");
 
 var falze = function falze(entity) {
 	/*;
@@ -78,7 +77,7 @@ var falze = function falze(entity) {
 		return arid(entity);
 	}
 
-	if (protype(entity, OBJECT)) {
+	if ((typeof entity === "undefined" ? "undefined" : (0, _typeof3.default)(entity)) == "object") {
 		return empt(entity);
 	}
 
