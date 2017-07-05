@@ -1,6 +1,6 @@
 {
   "name": "falze",
-  "version": "0.24.0",
+  "version": "0.25.0",
   "description": "Check if entity is falsy or empty.",
   "main": "falze.deploy.js",
   "support": "falze.support.js",
@@ -26,9 +26,9 @@
     "tests"
   ],
   "dependencies": {
-    "arid": "^0.27.0",
-    "doubt": "^0.28.0",
-    "empt": "^0.24.0",
+    "arid": "^0.28.0",
+    "doubt": "^0.29.0",
+    "empt": "^0.25.0",
     "falzy": "^0.20.0"
   }
 }
