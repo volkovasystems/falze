@@ -34,10 +34,11 @@
 			"file": "falze.js",
 			"module": "falze",
 			"author": "Richeve S. Bebedor",
-			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-			],
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
+			],
 			"repository": "https://github.com/volkovasystems/falze.git",
 			"test": "falze-test.js",
 			"global": true
@@ -53,8 +54,7 @@
 			"arid": "arid",
 			"doubt": "doubt",
 			"empt": "empt",
-			"falzy": "falzy",
-			"protype": "protype"
+			"falzy": "falzy"
 		}
 	@end-include
 */
@@ -63,7 +63,6 @@ const arid = require( "arid" );
 const doubt = require( "doubt" );
 const empt = require( "empt" );
 const falzy = require( "falzy" );
-const protype = require( "protype" );
 
 const falze = function falze( entity ){
 	/*;
@@ -78,7 +77,7 @@ const falze = function falze( entity ){
 		return arid( entity );
 	}
 
-	if( protype( entity, OBJECT ) ){
+	if( typeof entity == "object" ){
 		return empt( entity );
 	}
 

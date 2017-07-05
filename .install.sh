@@ -4,7 +4,6 @@ arid \
 doubt \
 empt \
 falzy \
-protype \
 --save && \
 yarn add \
 babel-cli \
@@ -19,6 +18,5 @@ arid \
 doubt \
 empt \
 falzy \
-protype \
 --save \
 --force-latest
