@@ -1,8 +1,69 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./falze.deploy.js">
-		</script>
+		<title>falze unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./falze.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "falze unit test", function( assert ) {
+
+				assert.equal( falze( NaN ), true, "should be equal to true" );
+
+				assert.equal( falze( null ), true, "should be equal to true" );
+
+				assert.equal( falze( undefined ), true, "should be equal to true" );
+
+				assert.equal( falze( ), true, "should be equal to true" );
+
+				assert.equal( falze( "" ), true, "should be equal to true" );
+
+				assert.equal( falze( { } ), true, "should be equal to true" );
+
+				assert.equal( falze( [ ] ), true, "should be equal to true" );
+
+				class ClassA{
+					constructor( ){ }
+					method( ){ return "hello"; }
+				}
+
+				let testA = new ClassA( );
+				assert.equal( falze( testA ), true, "should return true" );
+
+
+				assert.equal( falze( "hello" ), false, "should be equal to false" );
+
+				assert.equal( falze( { "name": "simple" } ), false, "should be equal to false" );
+
+				assert.equal( falze( [ 1, 2, 3 ] ), false, "should be equal to false" );
+
+				assert.equal( falze( 0 ), false, "should be equal to false" );
+
+				assert.equal( falze( Symbol.for( "hello" ) ), false, "should return false" );
+
+				assert.equal( falze( Error ), false, "should return false" );
+
+				assert.equal( falze( function hello( ){ } ), false, "should be equal to false" );
+
+				assert.equal( falze( Infinity ), false, "should be equal to false" );
+
+				assert.equal( falze( ( ) => { } ), false, "should return false" );
+
+				assert.equal( falze( ( ( ) => arguments )( ) ), false, "should return false" );
+
+				assert.equal( falze( ( entity ) => ( typeof entity == "string" ) ), false, "should return false" );
+
+			} );
+		</script>
+	</body>
 </html>
