@@ -1,7 +1,7 @@
 "use strict";
 
 /*;
-	@module-license:
+	@test-license:
 		The MIT License (MIT)
 		@mit-license
 
@@ -25,63 +25,53 @@
 		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 		SOFTWARE.
-	@end-module-license
+	@end-test-license
 
-	@module-configuration:
+	@test-configuration:
 		{
 			"package": "falze",
-			"path": "falze/falze.js",
-			"file": "falze.js",
-			"module": "falze",
+			"path": "falze/test.module.js",
+			"file": "test.module.js",
+			"module": "test",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
-			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-				"Vinse Vinalon <vinsevinalon@gmail.com>"
-			],
-			"repository": "https://github.com/volkovasystems/falze.git",
-			"test": "falze-test.js",
-			"global": true
+			"repository": "https://github.com/volkovasystems/falze.git"
 		}
-	@end-module-configuration
+	@end-test-configuration
 
-	@module-documentation:
-		Check if entity is falsy or empty.
-	@end-module-documentation
+	@test-documentation:
+
+	@end-test-documentation
 
 	@include:
 		{
-			"arid": "arid",
-			"doubt": "doubt",
-			"empt": "empt",
-			"falzy": "falzy"
+			"assert": "should",
+			"falze": "falze"
 		}
 	@end-include
 */
 
-const arid = require( "arid" );
-const doubt = require( "doubt" );
-const empt = require( "empt" );
-const falzy = require( "falzy" );
+const assert = require( "should" );
 
-const falze = function falze( entity ){
-	/*;
-		@meta-configuration:
-			{
-				"entity:required": "*"
-			}
-		@end-meta-configuration
-	*/
+//: @server:
+const falze = require( "./falze.js" );
+//: @end-server
 
-	if( doubt( entity, AS_ARRAY ) ){
-		return arid( entity );
-	}
 
-	if( typeof entity == "object" ){
-		return empt( entity );
-	}
 
-	return falzy( entity );
-};
 
-module.exports = falze;
+
+
+//: @server:
+
+describe( "falze", ( ) => {
+
+} );
+
+//: @end-server
+
+
+
+
+
+

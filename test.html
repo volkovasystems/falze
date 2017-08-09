@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Falze QUnit Example</title>
-	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
-	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-	<script type="application/javascript" src="./falze.deploy.js"></script>
-</head>
+		<title>test:falze</title>
 
-<body>
-	<div id="qunit"></div>
-	<div id="qunit-fixture"></div>
-	<script>
-		QUnit.test("equal test", function (assert) {
-			assert.equal(falze(NaN), true, "should be true");
-			
-			assert.equal(falze(null), true, "should be true");
-			
-			assert.equal(falze(undefined), true, "should be true");
-			
-			assert.equal(falze(), true, "should be true");
-			
-			assert.equal(falze(""), true, "should be true");
-			
-			assert.equal(falze({}), true, "should be true");
-			
-			assert.equal(falze([]), true, "should be true");
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 
-			assert.equal(falze("hello"), false, "should be false");
-			
-			assert.equal(falze(123), false, "should be false");
-			
-			assert.equal(falze({ "name": "simple" }), false, "should be false");
-			
-			assert.equal(falze([1, 2, 3]), false, "should be false");
-			
-			assert.equal(falze(function hello() { }), false, "should be false");
-			
-			assert.equal(falze(Infinity), false, "should be false");
-			
-			assert.equal(falze(Array), false, "should be false");
-			
-			assert.equal(falze(Object), false, "should be false");
-			
-			assert.equal(falze(Date), false, "should be false");
-		});
-	</script>
-</body>
+		<script type="application/javascript" src="./falze.deploy.js"></script>
+	</head>
 
+	<body>
+		<div id="mocha"></div>
+
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
+
+		<script type="application/javascript">
+			mocha.setup( "bdd" );
+		</script>
+
+		<script type="application/javascript" src="./test.deploy.js"></script>
+
+		<script type="application/javascript">
+			mocha.run( );
+		</script>
+	</body>
 </html>
