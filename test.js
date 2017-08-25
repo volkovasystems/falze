@@ -66,6 +66,123 @@ const falze = require( "./falze.js" );
 
 describe( "falze", ( ) => {
 
+	describe( "`falze( NaN )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( falze( NaN ), true );
+		} );
+	} );
+
+	describe( "`falze( null )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( falze( null ), true );
+		} );
+	} );
+
+	describe( "`falze( undefined )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( falze( undefined ), true );
+		} );
+	} );
+
+	describe( "`falze( )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( falze( ), true );
+		} );
+	} );
+
+	describe( "`falze( '' )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( falze( "" ), true );
+		} );
+	} );
+
+	describe( "`falze( { } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( falze( { } ), true );
+		} );
+	} );
+
+	describe( "`falze( [ ] )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( falze( [ ] ), true );
+		} );
+	} );
+
+	describe( "`falze with instance of class named 'ClassA'`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			class ClassA{
+				constructor( ){ }
+				method( ){ return "hello"; }
+			}
+
+			let testA = new ClassA( );
+
+			assert.equal( falze( testA ), true );
+
+		} );
+	} );
+
+	describe( "`falze( 'hello' )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( "hello" ), false );
+		} );
+	} );
+
+	describe( "`falze( { 'name': 'simple' } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( { "name": "simple" } ), false );
+		} );
+	} );
+
+	describe( "`falze( [ 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( [ 1, 2, 3 ] ), false );
+		} );
+	} );
+
+	describe( "`falze( 0 )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( 0 ), false );
+		} );
+	} );
+
+	describe( "`falze( Symbol.for( 'hello' ) )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( Symbol.for( "hello" ) ), false );
+		} );
+	} );
+
+	describe( "`falze( Error )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( Error ), false );
+		} );
+	} );
+
+	describe( "`falze( function hello( ){ } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( function hello( ){ } ), false );
+		} );
+	} );
+
+	describe( "`falze( Infinity )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( Infinity ), false );
+		} );
+	} );
+
+	describe( "`falze( ( ) => { } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( ( ) => { } ), false );
+		} );
+	} );
+
+	describe( "`falze( ( entity ) => ( typeof entity == 'string' ) )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( falze( ( entity ) => ( typeof entity == "string" ) ), false );
+		} );
+	} );
+
 } );
 
 //: @end-server
